@@ -7,7 +7,6 @@ describe("CoinFlip", function () {
   let CoinFlip, coinFlip;
 
   beforeEach(async function() {
-    [owner, alice, bob] = await ethers.getSigners();
     CoinFlip = await ethers.getContractFactory("CoinFlip");
     coinFlip = await CoinFlip.deploy();
   });
