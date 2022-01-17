@@ -13,6 +13,11 @@ async function main() {
   const coinFlip = await CoinFlip.deploy();
   console.log("CoinFlip address: ", await coinFlip.address);
   console.log("Account balance after CoinFlip deploy: ", (await deployer.getBalance()).toString());
+
+  const CoinFlipAttack = await ethers.getContractFactory("CoinFlipAttack");
+  const coinflipAttack = await CoinFlipAttack.deploy();
+  console.log("CoinFlipAttack address: ", await coinflipAttack.address);
+  console.log("Account balance after CoinFlipAttack deploy: ", (await deployer.getBalance()).toString());
 }
 
 main()
