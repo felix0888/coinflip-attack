@@ -111,4 +111,4 @@ npx hardhat run --network [NETWORK-NAME] scripts/deploy.js
 npx hardhat test
 ```
 
-You can test fallback on the local hardhat node as well.
+You can test fallout on the local hardhat node as well.
